@@ -30,10 +30,10 @@
 - [x] 4.7 Write tests for subcommand routing and flag parsing
 
 ## 5. GitHub Actions
-- [ ] 5.1 Create `.github/workflows/daily.yml` with cron schedule for morning run
-- [ ] 5.2 Configure workflow to build and run `sam` with env vars from GitHub Secrets
-- [ ] 5.3 Add manual trigger (`workflow_dispatch`) for on-demand runs
+- [x] 5.1 Create `.github/workflows/daily.yml` with cron schedule for morning run
+- [x] 5.2 Configure workflow to build and run `sam` with env vars from GitHub Secrets
+- [x] 5.3 Add manual trigger (`workflow_dispatch`) for on-demand runs
 
 ## 6. Sample Capability (placeholder)
-- [ ] 6.1 Create a `hello` subcommand that outputs a greeting via the presenter — proves the full pipeline works (config → capability → output)
+- [x] 6.1 Create a `hello` subcommand that outputs a greeting via the presenter — proves the full pipeline works (config → capability → output)
 - [ ] 6.2 Remove `hello` capability once a real capability is implemented
