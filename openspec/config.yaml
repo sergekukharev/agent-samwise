@@ -1,0 +1,36 @@
+schema: spec-driven
+
+context: |
+  Project: Sam (agent-samwise) — a personal assistant agent inspired by Samwise Gamgee.
+  
+  Tech stack: Go (Golang)
+  Execution: GitHub Actions (scheduled) + local CLI
+  Output: Slack messages (scheduled runs), CLI stdout (local runs)
+  Configuration: YAML config file for calendars, projects, boards, etc.
+  Secrets: Environment variables for API keys (Google, Todoist, Slack)
+  
+  Capabilities (planned):
+  1. Sync Google Calendar events to a Todoist project
+  2. Review Todoist projects from a kanban board and advise on next steps / blockers
+  3. Review non-archived Gmail emails for items needing attention
+  4. Memory system in AGENTS.md for remembering user preferences
+  5. Daily calendar review — map events to projects/areas, recommend attend/skip
+  
+  Design principles:
+  - Domain-expressive naming (no Manager/Handler/Service/Utils)
+  - Value objects over primitives
+  - No setters — methods that capture intent
+  - Configurable via YAML, secrets via env vars
+
+rules:
+  proposal:
+    - Identify which planned capability this change relates to
+    - Consider both GitHub Actions and local CLI execution paths
+  specs:
+    - Use Given/When/Then format for scenarios
+    - Include scenarios for both Slack output and CLI output where relevant
+  design:
+    - Justify external library choices
+    - Consider testability — interfaces for external APIs
+  tasks:
+    - Include tasks for GitHub Actions workflow where applicable
