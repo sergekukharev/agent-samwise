@@ -15,11 +15,11 @@
 - [x] 2.7 Write tests for config loading, validation, and env var resolution
 
 ## 3. Output Delivery
-- [ ] 3.1 Define `Briefing`, `Section`, and `Presenter` interface in `internal/output/`
-- [ ] 3.2 Implement `TerminalPresenter` — plain text with headers and indentation
-- [ ] 3.3 Implement `SlackPresenter` — Slack Block Kit formatting via incoming webhook
-- [ ] 3.4 Implement presenter auto-detection: in GitHub Actions, require `SLACK_WEBHOOK_URL` (exit non-zero if missing); locally, use terminal
-- [ ] 3.5 Write tests for terminal presenter output and Slack payload construction
+- [x] 3.1 Define `Briefing`, `Section`, and `Presenter` interface in `internal/output/`
+- [x] 3.2 Implement `TerminalPresenter` — plain text with headers and indentation
+- [x] 3.3 Implement `SlackPresenter` — Slack Block Kit formatting via incoming webhook
+- [x] 3.4 Implement presenter auto-detection: in GitHub Actions, require `SLACK_WEBHOOK_URL` (exit non-zero if missing); locally, use terminal
+- [x] 3.5 Write tests for terminal presenter output and Slack payload construction
 
 ## 4. CLI Routing
 - [ ] 4.1 Implement subcommand routing using `os.Args` and a capability registry map

@@ -19,13 +19,13 @@ The system SHALL route output to Slack or terminal based on the execution contex
 - **AND** an error message indicates the missing webhook URL
 
 ### Requirement: Structured output content
-The system SHALL format output with a title, summary, and detail sections.
+The system SHALL format output as markdown with a title and sections.
 
 #### Scenario: Slack message formatting
 - **WHEN** output is delivered to Slack
-- **THEN** the message uses Slack Block Kit formatting with sections and dividers
+- **THEN** the message uses Slack mrkdwn formatting in a single section block
 
 #### Scenario: Terminal output formatting
 - **WHEN** output is printed to terminal
-- **THEN** the output uses plain text with clear headers and indentation
+- **THEN** the output uses markdown with `#` for title and `##` for section headings
 
