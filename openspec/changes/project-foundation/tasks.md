@@ -9,7 +9,7 @@
 - [x] 2.1 Define `Config` struct in `internal/config/` with sections for each planned capability (calendars, todoist, gmail, slack, areas of interest)
 - [x] 2.2 Implement YAML config loader using `gopkg.in/yaml.v3` with error messages including line numbers
 - [x] 2.3 Implement default path resolution (`./config.yaml` in working directory)
-- [ ] 2.4 Implement `--config` flag override
+- [x] 2.4 Implement `--config` flag override
 - [x] 2.5 Implement per-capability config validation (only validate sections needed by the invoked subcommand)
 - [x] 2.6 Implement environment variable resolution for secrets with clear error on missing vars
 - [x] 2.7 Write tests for config loading, validation, and env var resolution
@@ -22,12 +22,12 @@
 - [x] 3.5 Write tests for terminal presenter output and Slack payload construction
 
 ## 4. CLI Routing
-- [ ] 4.1 Implement subcommand routing using `os.Args` and a capability registry map
-- [ ] 4.2 Implement global flags (`--config`) using `flag` package
-- [ ] 4.3 Implement help text generation from registered capabilities
-- [ ] 4.4 Implement unknown subcommand error with suggestions
-- [ ] 4.5 Wire config loading → presenter detection → capability dispatch in main
-- [ ] 4.7 Write tests for subcommand routing and flag parsing
+- [x] 4.1 Implement subcommand routing using `os.Args` and a capability registry map
+- [x] 4.2 Implement global flags (`--config`) using `flag` package
+- [x] 4.3 Implement help text generation from registered capabilities
+- [x] 4.4 Implement unknown subcommand error with suggestions
+- [x] 4.5 Wire config loading → presenter detection → capability dispatch in main
+- [x] 4.7 Write tests for subcommand routing and flag parsing
 
 ## 5. GitHub Actions
 - [ ] 5.1 Create `.github/workflows/daily.yml` with cron schedule for morning run
