@@ -30,6 +30,7 @@ jobs:
 
       - name: Run Sam
         env:
+          TZ: Europe/Berlin
           GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_CREDENTIALS }}
           TODOIST_API_TOKEN: ${{ secrets.TODOIST_API_TOKEN }}
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
@@ -37,6 +38,5 @@ jobs:
           if [ -n "${{ inputs.command }}" ]; then
             ./sam ${{ inputs.command }}
           else
-            echo "No command specified. Available commands:"
-            ./sam
+            ./sam calendar-sync
           fi
